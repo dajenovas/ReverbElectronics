@@ -1,0 +1,63 @@
+@import "../../app.component.scss";
+
+.d-block {
+    height: 250px;
+}
+
+.accordian {
+    margin-bottom: 50px;
+}
+
+// CARD SET
+
+.card {
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:539px) {
+    .card-col{
+        flex-direction: row;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width:990px) {
+
+    .d-block {
+        height: 500px;
+    }
+
+    .card-set {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
