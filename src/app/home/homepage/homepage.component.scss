@@ -5,6 +5,10 @@
     padding-bottom: 50px;
 }
 
+.banner {
+    animation: fade-up 1s ease 0.2s ;
+}
+
 .d-block {
     height: 250px;
 }
@@ -37,7 +41,7 @@
 }
 
 .card-col {
-    display: flex;
+    display: none;
 }
 
 .accordion-button {
@@ -47,6 +51,16 @@
 
 .accordian-set {
     margin: 30px 50px 30px 50px;
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (min-width:539px) {
@@ -85,4 +99,7 @@
         margin: 0 50px 0 50px;
     }
     
+    .card-col {
+        display: flex;
+    }
 }
