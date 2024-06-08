@@ -1,6 +1,5 @@
 #menu {
-    background: #4B3F72;
-    background: linear-gradient(to bottom, #4B3F72, #97A3FF);
+    background: linear-gradient(to bottom, #4b3f72, #9882e0);
     height: 50px;
     border-radius: 0px;
 }
@@ -30,6 +29,7 @@
     color: #FFFFFF;
     font-size: 19px;
     text-transform: capitalize;
+    animation: transparent 1s ease-in;
 }
 
 #menu a.dropdown-arrow:after {
@@ -95,6 +95,16 @@
 #menu ul.sub-menus a:hover {
     background: #FFFFFF;
     color: #444444;
+}
+
+@keyframes transparent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 

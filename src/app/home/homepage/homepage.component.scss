@@ -1,11 +1,12 @@
 @import "../../app.component.scss";
 
-.d-block {
-    height: 250px;
+.section {
+    background-color: #c7c1db;
+    padding-bottom: 50px;
 }
 
-.accordian {
-    margin-bottom: 50px;
+.d-block {
+    height: 250px;
 }
 
 // CARD SET
@@ -37,7 +38,15 @@
 
 .card-col {
     display: flex;
-    flex-direction: column;
+}
+
+.accordion-button {
+    color: white;
+    background-color: #1e1e1e;   
+}
+
+.accordian-set {
+    margin: 30px 50px 30px 50px;
 }
 
 @media screen and (min-width:539px) {
@@ -48,16 +57,32 @@
     .card {
         margin: 10px;
     }
+
+    .banner {
+        padding-top: 30px;
+        margin: 0 50px 0 50px;
+    }
 }
 
 @media screen and (min-width:990px) {
 
     .d-block {
         height: 500px;
+        margin-top: 10px 30px 0 30px;
     }
 
     .card-set {
         flex-direction: row;
         justify-content: center;
     }
+
+    .card-col-pc {
+        display: flex;
+    }
+
+    .banner {
+        padding-top: 30px;
+        margin: 0 50px 0 50px;
+    }
+    
 }
